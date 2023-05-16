@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "cypress": "^12.12.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-multi-reporters": "^1.6.3",
+    "junit-merge": "^2.0.0",
+    "mocha-junit-reporter": "^2.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "scripts": {
+    "delete:reports": "rm -r cypress/results/* || true",
+    "prereport": "npm run delete:reports",
+    "cypress:run": "npm run prereport && npx cypress run",
+    "cy:e2e": "npm run cypress:run; npm run junit:merge; npm run mochawesome:merge",
+    "mochawesome:merge": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
+    "junit:merge": "junit-merge -d cypress/results/junit o- cypress/results/junit/result.xml"
+  }
+}
