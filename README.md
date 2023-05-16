@@ -15,7 +15,9 @@ npm install
 ```ssh
 npm run cy:e2e
 ```
-- Results are available on folder cypress/results/mochawesome
+- Results are available on folder mochawesome-report/mochawesome.html
+
+Note: the node version used was v18.13.0
 
 ## Manual test case scenarios covered
 - Case scenarios' descriptions [here](https://docs.google.com/spreadsheets/d/1NCJGqbnjvW-nDEvu02Z0RruxcpLISo3X0iBT33yjmd0/edit?usp=sharing)
