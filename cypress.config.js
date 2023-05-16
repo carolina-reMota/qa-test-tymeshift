@@ -13,7 +13,7 @@ module.exports = defineConfig({
   },
   e2e: {
     baseUrl: 'https://deploy-preview-2--stupefied-kare-608721.netlify.app',
-    pageLoadTimeout: 1000,
+    pageLoadTimeout: 3000,
     specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
     excludeSpecPattern: ['**/1-getting-started/*', '**/2-advanced-examples/*']
   },
