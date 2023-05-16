@@ -1,5 +1,26 @@
-# Tymeshift - QA automation test
-Welcome to Tymeshift's QA test 🧪 
+# Tymeshift - QA automation test solution 
+by [Carolina Mota](https://www.linkedin.com/in/carolina-remota/)
+
+## Steps to Run automated tests
+- Clone repo: 
+```ssh
+git clone git@github.com:carolina-reMota/qa-test-tymeshift.git
+cd qa-test-tymeshift
+```
+- Install dependencies
+```ssh
+npm install
+```
+- Run the tests
+```ssh
+npm run cy:e2e
+```
+- Results are available on folder cypress/results/mochawesome
+
+## Manual test case scenarios covered
+- Case scenarios' descriptions [here](https://docs.google.com/spreadsheets/d/1NCJGqbnjvW-nDEvu02Z0RruxcpLISo3X0iBT33yjmd0/edit?usp=sharing)
+- Bugs report under [Issues](https://github.com/carolina-reMota/qa-test-tymeshift/issues) powered by Jam
+
 
 ## Task description
 
